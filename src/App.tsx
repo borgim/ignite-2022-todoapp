@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import { Header } from './components/Header'
+import { List } from './components/List'
 
 function App() {
 
@@ -7,6 +7,7 @@ function App() {
   return (
     <>
       <Header />
+      <List />
     </>
   )
 }

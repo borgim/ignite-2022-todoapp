@@ -1,0 +1,48 @@
+.listInfos {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--gray-400);
+  font-family: "Inter", sans-serif;
+}
+
+.created {
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.created span,
+.finished span {
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  padding: 0.125rem 0.5rem;
+  border-radius: 999px;
+}
+
+.finished {
+  color: var(--purple);
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.tasks {
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.tasks p {
+  font-family: "Inter", sans-serif;
+  color: var(--gray-300);
+  font-weight: 700;
+  text-align: center;
+}
+
+.tasks span {
+  display: block;
+  font-weight: 400;
+}

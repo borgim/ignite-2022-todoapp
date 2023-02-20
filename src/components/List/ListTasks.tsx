@@ -39,7 +39,15 @@ export function ListTasks({ tasks, onDelete }: TasksListProps) {
       }
     </ul>
 
-  const tasksQuantity = tasks.length
+const calcFinishedTasksFromTotalList = () => {
+  if (finishedTasks !== 0 && finishedTasks > tasks.length) {
+    setFinishedTasks(finishedTasks - (finishedTasks - tasks.length));
+  }
+
+  return tasks.length
+} 
+  const tasksQuantity = calcFinishedTasksFromTotalList(); 
+
 
   return (
     <section>

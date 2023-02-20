@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--gray-400);
   font-family: "Inter", sans-serif;
 }
 
@@ -33,6 +32,12 @@
   justify-content: center;
   align-items: center;
   gap: 16px;
+  border-top: 1px solid var(--gray-400);
+}
+
+.tasks ul {
+  list-style: none;
+  width: 100%;
 }
 
 .tasks p {
@@ -45,4 +50,9 @@
 .tasks span {
   display: block;
   font-weight: 400;
+}
+
+.withoutBorderAndPadding {
+  border: none;
+  padding: 0;
 }
